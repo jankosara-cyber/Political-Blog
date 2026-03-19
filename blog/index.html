@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juraj Orwell — Politický blog s prehľadnými článkami o aktuálnom politickom dianí.">
+    <meta name="keywords" content="politika, politický blog, slovensko, analýza, komentár">
+    <meta property="og:title" content="Juraj Orwell">
+    <meta property="og:description" content="Politický blog s prehľadnými článkami o aktuálnom politickom dianí.">
+    <meta property="og:type" content="website">
+    <title>Juraj Orwell</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Juraj Orwell</a>
+            <nav>
+                <a href="index.html" class="active">Domov</a>
+                <a href="o-nas.html">O nás</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>Politické dianie, jednoducho a zrozumiteľne.</h1>
+                <p>Sledujeme svet politiky a prinášame vám prehľadné články v slovenčine.</p>
+            </div>
+        </section>
+
+        <section class="posts" id="posts">
+            <!-- Posts are loaded dynamically from posts.json -->
+        </section>
+
+        <div class="load-more" id="load-more" style="display: none;">
+            <button onclick="loadMore()">Načítať ďalšie články</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Juraj Orwell. Všetky práva vyhradené.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
