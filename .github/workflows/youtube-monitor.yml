@@ -8,6 +8,9 @@ on:
   workflow_dispatch:
     # Allows you to run this manually from GitHub's Actions tab anytime
 
+permissions:
+  contents: write
+
 jobs:
   check-for-new-videos:
     runs-on: ubuntu-latest
