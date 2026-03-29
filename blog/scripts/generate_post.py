@@ -82,12 +82,19 @@ def get_transcript(video_id):
 
 
 def generate_post(video, transcript, client):
-    """Call Claude to produce a Slovak blog post JSON from the transcript."""
+    """Call Claude to produce a Slovak blog post JSON from the transcript or description."""
 
     title       = video.get("title", "Untitled Video")
     channel     = video.get("channel_name", "Unknown")
     video_url   = f"https://www.youtube.com/watch?v={video['video_id']}"
-    excerpt     = transcript[:TRANSCRIPT_LIMIT]
+    description = video.get("description", "")
+
+    if transcript:
+        source_label = "Prepis videa (môže byť v rôznych jazykoch — angličtina, ruština, nemčina atď.):"
+        source_text  = transcript[:TRANSCRIPT_LIMIT]
+    else:
+        source_label = "Popis videa (prepis nie je k dispozícii — vychádzaj z názvu a popisu):"
+        source_text  = description[:2000] or "(Popis nie je dostupný)"
 
     prompt = f"""Si redaktor slovenského politického blogu "Juraj Orwell" — analytický, kritický, nezávislý.
 Tvoja úloha je napísať originálny, zaujímavý blogový príspevok v slovenčine na základe tohto YouTube videa.
@@ -96,8 +103,8 @@ Video: {title}
 Kanál: {channel}
 URL: {video_url}
 
-Prepis videa (môže byť v rôznych jazykoch — angličtina, ruština, nemčina atď.):
-{excerpt}
+{source_label}
+{source_text}
 
 Napíš príspevok v slovenčine, ktorý:
 • Má pútavý, analytický nadpis (NIE len preklad názvu videa)
@@ -190,19 +197,15 @@ def main():
         print(f"▶ {title}")
         print(f"  ID: {video_id}")
 
-        # 1. Transcript
+        # 1. Transcript (optional — falls back to description if unavailable)
         print("  Fetching transcript…")
         transcript = get_transcript(video_id)
-        if not transcript:
-            print("  Skipping — no transcript.\n")
-            video["error"] = "no_transcript"
-            video["processed_at"] = datetime.now(timezone.utc).isoformat()
-            processed_list.append(video)
-            continue
+        if transcript:
+            print(f"  Transcript: {len(transcript):,} chars")
+        else:
+            print("  No transcript — will use title + description instead.")
 
-        print(f"  Transcript: {len(transcript):,} chars")
-
-        # 2. Generate post
+        # 2. Generate post (works with or without transcript)
         print("  Generating Slovak post with Claude…")
         try:
             post_data = generate_post(video, transcript, client)
