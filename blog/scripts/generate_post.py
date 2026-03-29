@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
 Juraj Orwell — Content Pipeline
-Reads video-queue.json, fetches YouTube transcripts, generates Slovak blog
-post drafts using Claude, and saves them to blog/drafts/ as JSON files.
+
+Reads video-queue.json, fetches YouTube transcripts, generates Slovak blog post
+drafts using Claude, and saves them to blog/drafts/ as JSON files.
+
 Run from the blog/ directory (same as check_youtube.py).
 """
 
@@ -17,17 +19,16 @@ from pathlib import Path
 import anthropic
 from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, TranscriptsDisabled
 
-# ── Paths (relative to blog/) ──────────────────────────────────────────────
+# ── Paths (relative to blog/) ────────────────────────────────────────────────
 QUEUE_FILE  = "video-queue.json"
 DRAFTS_DIR  = Path("drafts")
 
-# ── Claude model ───────────────────────────────────────────────────────────
-MODEL       = "claude-haiku-4-5-20251001"
-MAX_TOKENS  = 2048
+# ── Claude model ─────────────────────────────────────────────────────────────
+MODEL          = "claude-haiku-4-5-20251001"
+MAX_TOKENS     = 2048
 TRANSCRIPT_LIMIT = 9000   # chars sent to Claude (keeps cost low)
 
-
-# ── Helpers ────────────────────────────────────────────────────────────────
+# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def load_queue():
     if not Path(QUEUE_FILE).exists():
@@ -35,11 +36,9 @@ def load_queue():
     with open(QUEUE_FILE, encoding="utf-8") as f:
         return json.load(f)
 
-
 def save_queue(queue):
     with open(QUEUE_FILE, "w", encoding="utf-8") as f:
         json.dump(queue, f, ensure_ascii=False, indent=2)
-
 
 def slugify(text):
     """Convert title to URL-safe slug (handles Slovak/Czech diacritics)."""
@@ -48,56 +47,70 @@ def slugify(text):
     ascii_str = re.sub(r"[^a-z0-9\s-]", "", ascii_str)
     return re.sub(r"[\s-]+", "-", ascii_str).strip("-")[:60]
 
-
 def get_transcript(video_id):
-    """Fetch transcript for a YouTube video. Tries EN first, then any language."""
+    """Fetch transcript for a YouTube video. Supports both old and new youtube-transcript-api."""
     try:
-        segments = YouTubeTranscriptApi.get_transcript(video_id, languages=["en", "en-US", "en-GB"])
-    except NoTranscriptFound:
+        # New API style (v0.6+): instantiate the class
+        api = YouTubeTranscriptApi()
         try:
-            # Fall back to any available transcript in any language
-            transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-            # Try manual transcripts first, then generated, in any language
-            transcript = None
-            for t in transcript_list:
-                transcript = t
-                break  # take the first available
-            if transcript is None:
-                print(f"    ✗ No transcripts found at all.")
+            # Try English first
+            fetched = api.fetch(video_id, languages=["en", "en-US", "en-GB"])
+        except Exception:
+            # Fall back to any available language
+            try:
+                transcript_list = api.list(video_id)
+                first = next(iter(transcript_list))
+                fetched = first.fetch()
+                print(f"    Using transcript language: {first.language}")
+            except Exception as e2:
+                print(f"  ✗ No transcript available: {e2}")
                 return None
-            segments = transcript.fetch()
-            print(f"    Using transcript language: {transcript.language} ({transcript.language_code})")
-        except Exception as e:
-            print(f"    ✗ No transcript available: {e}")
+        # Support both dict-style and object-style segments
+        full_text = " ".join(
+            seg.text if hasattr(seg, "text") else seg["text"]
+            for seg in fetched
+        )
+        return full_text
+    except TypeError:
+        # Old API style (v0.5.x): use class methods directly
+        try:
+            segments = YouTubeTranscriptApi.get_transcript(
+                video_id, languages=["en", "en-US", "en-GB"]
+            )
+        except NoTranscriptFound:
+            try:
+                transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+                first = next(iter(transcript_list))
+                segments = first.fetch()
+                print(f"    Using transcript language: {first.language}")
+            except Exception as e2:
+                print(f"  ✗ No transcript available: {e2}")
+                return None
+        except (TranscriptsDisabled, Exception) as e:
+            print(f"  ✗ Transcript error: {e}")
             return None
-    except TranscriptsDisabled:
-        print("    ✗ Transcripts are disabled for this video.")
-        return None
+        full_text = " ".join(seg["text"] for seg in segments)
+        return full_text
     except Exception as e:
-        print(f"    ✗ Transcript error: {e}")
+        print(f"  ✗ Transcript error: {e}")
         return None
-
-    full_text = " ".join(seg["text"] for seg in segments)
-    return full_text
 
 
 def generate_post(video, transcript, client):
-    """Call Claude to produce a Slovak blog post JSON from the transcript or description."""
-
+    """Call Claude to produce a Slovak blog post using plain-text delimiters (no JSON)."""
     title       = video.get("title", "Untitled Video")
     channel     = video.get("channel_name", "Unknown")
     video_url   = f"https://www.youtube.com/watch?v={video['video_id']}"
     description = video.get("description", "")
 
     if transcript:
-        source_label = "Prepis videa (môže byť v rôznych jazykoch — angličtina, ruština, nemčina atď.):"
+        source_label = "Prepis videa (môže byť v rôznych jazykoch — angličtina, ruština atď.):"
         source_text  = transcript[:TRANSCRIPT_LIMIT]
     else:
         source_label = "Popis videa (prepis nie je k dispozícii — vychádzaj z názvu a popisu):"
         source_text  = description[:2000] or "(Popis nie je dostupný)"
 
     prompt = f"""Si redaktor slovenského politického blogu "Juraj Orwell" — analytický, kritický, nezávislý.
-Tvoja úloha je napísať originálny, zaujímavý blogový príspevok v slovenčine na základe tohto YouTube videa.
 
 Video: {title}
 Kanál: {channel}
@@ -106,44 +119,56 @@ URL: {video_url}
 {source_label}
 {source_text}
 
-Napíš príspevok v slovenčine, ktorý:
-• Má pútavý, analytický nadpis (NIE len preklad názvu videa)
-• Analyzuje hlavné myšlienky a argumenty z videa
-• Dáva ich do kontextu európskej a slovenskej politiky
-• Je písaný živým, publicistickým štýlom (nie akademicky)
-• Má 500–800 slov
-• Obsah je vo formáte HTML — použi <p>, <h2>, <strong>, <em>, <ul>, <li>
-  (BEZ tagov <html>, <body>, <head>, <style>)
+Napíš blogový príspevok v slovenčine. Použi PRESNE tento formát (žiadne markdown bloky kódu, žiadne iné texty):
 
-Odpovedz VÝLUČNE platným JSON objektom (bez markdown obalov, bez komentárov):
-{{
-  "title": "Slovenský nadpis článku",
-  "tags": ["tag1", "tag2", "tag3"],
-  "content": "<p>HTML obsah...</p>"
-}}"""
+NADPIS: [pútavý slovenský nadpis — NIE len preklad názvu videa]
+TAGY: [tag1, tag2, tag3]
+OBSAH:
+[HTML obsah článku — 500–800 slov, použi <p>, <h2>, <strong>, <em>, <ul>, <li>; BEZ tagov html/body/head/style]"""
 
     message = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         messages=[{"role": "user", "content": prompt}],
     )
-
     raw = message.content[0].text.strip()
 
-    # Strip markdown code fences if Claude wraps the JSON
-    raw = re.sub(r"^```(?:json)?\s*", "", raw)
-    raw = re.sub(r"\s*```$", "", raw)
+    # Parse the structured plain-text response
+    post_title    = ""
+    tags          = []
+    content_lines = []
+    in_content    = False
 
-    return json.loads(raw)
+    for line in raw.split("\n"):
+        if not in_content and line.startswith("NADPIS:"):
+            post_title = line[7:].strip().strip("[]")
+        elif not in_content and line.startswith("TAGY:"):
+            tags_raw = line[5:].strip().strip("[]")
+            tags = [t.strip() for t in tags_raw.split(",") if t.strip()]
+        elif not in_content and line.startswith("OBSAH:"):
+            in_content = True
+        elif in_content:
+            content_lines.append(line)
+
+    content = "\n".join(content_lines).strip()
+
+    # Fallbacks
+    if not post_title:
+        post_title = title
+    if not tags:
+        tags = ["politika"]
+    if not content:
+        raise ValueError(f"Claude returned no OBSAH content. Raw response:\n{raw[:500]}")
+
+    return {"title": post_title, "tags": tags, "content": content}
 
 
 def save_draft(video, post_data):
     """Persist the generated post as a JSON draft file."""
     DRAFTS_DIR.mkdir(exist_ok=True)
-
-    slug      = slugify(post_data["title"])
-    date_str  = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    filename  = f"{date_str}-{slug}.json"
+    slug     = slugify(post_data["title"])
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    filename = f"{date_str}-{slug}.json"
 
     draft = {
         "title":              post_data["title"],
@@ -160,11 +185,11 @@ def save_draft(video, post_data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(draft, f, ensure_ascii=False, indent=2)
 
-    print(f"    ✓ Draft saved: {filename}")
+    print(f"  ✓ Draft saved: {filename}")
     return filename
 
 
-# ── Main ───────────────────────────────────────────────────────────────────
+# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     print("=== Juraj Orwell — Content Pipeline ===")
@@ -177,8 +202,7 @@ def main():
         sys.exit(1)
 
     client = anthropic.Anthropic(api_key=api_key)
-
-    queue   = load_queue()
+    queue  = load_queue()
     pending = queue.get("pending", [])
 
     if not pending:
@@ -209,12 +233,8 @@ def main():
         print("  Generating Slovak post with Claude…")
         try:
             post_data = generate_post(video, transcript, client)
-        except json.JSONDecodeError as e:
-            print(f"    ✗ JSON parse error: {e}")
-            still_pending.append(video)
-            continue
         except Exception as e:
-            print(f"    ✗ Generation error: {e}")
+            print(f"  ✗ Generation error: {e}")
             still_pending.append(video)
             continue
 
@@ -236,7 +256,7 @@ def main():
     print(f"\n✅ Done. Generated {len(new_drafts)} draft(s).")
     if new_drafts:
         for f in new_drafts:
-            print(f"   • {f}")
+            print(f"  • {f}")
 
     # Signal to GitHub Actions how many drafts were made
     gha_output = os.environ.get("GITHUB_OUTPUT")
