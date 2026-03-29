@@ -55,10 +55,18 @@ def get_transcript(video_id):
         segments = YouTubeTranscriptApi.get_transcript(video_id, languages=["en", "en-US", "en-GB"])
     except NoTranscriptFound:
         try:
-            # Fall back to any available transcript
+            # Fall back to any available transcript in any language
             transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-            transcript = transcript_list.find_generated_transcript(["en", "cs", "sk", "de"])
+            # Try manual transcripts first, then generated, in any language
+            transcript = None
+            for t in transcript_list:
+                transcript = t
+                break  # take the first available
+            if transcript is None:
+                print(f"    ✗ No transcripts found at all.")
+                return None
             segments = transcript.fetch()
+            print(f"    Using transcript language: {transcript.language} ({transcript.language_code})")
         except Exception as e:
             print(f"    ✗ No transcript available: {e}")
             return None
@@ -88,7 +96,7 @@ Video: {title}
 Kanál: {channel}
 URL: {video_url}
 
-Prepis videa (angličtina):
+Prepis videa (môže byť v rôznych jazykoch — angličtina, ruština, nemčina atď.):
 {excerpt}
 
 Napíš príspevok v slovenčine, ktorý:
