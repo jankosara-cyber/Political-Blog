@@ -1,5 +1,6 @@
 {
-  "pending": [
+  "pending": [],
+  "processed": [
     {
       "video_id": "DBOVT0UdHXg",
       "title": "John Mearsheimer: Iran Holds All the Cards - The Strategic Defeat of the U.S.",
@@ -8,8 +9,9 @@
       "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
       "published": "2026-03-29T10:00:00+00:00",
       "description": "Mearsheimer on Iran strategy and US geopolitics",
-      "queued_at": "2026-03-29T10:00:00.000000+00:00"
+      "queued_at": "2026-03-29T10:00:00.000000+00:00",
+      "error": "no_transcript",
+      "processed_at": "2026-03-29T08:52:31.933472+00:00"
     }
-  ],
-  "processed": []
+  ]
 }
