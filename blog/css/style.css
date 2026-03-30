@@ -306,7 +306,7 @@ nav a.active {
     font-size: 2rem;
     font-weight: 800;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
     letter-spacing: -0.03em;
 }
 
@@ -321,6 +321,7 @@ nav a.active {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    margin-bottom: 20px;
 }
 
 /* --- Post Content --- */
@@ -336,7 +337,7 @@ nav a.active {
     font-family: var(--font-heading);
     font-size: 1.3rem;
     font-weight: 800;
-    margin-top: 2.5rem;
+    margin-top: 10px;
     margin-bottom: 0.75rem;
     letter-spacing: -0.02em;
     padding-left: 0.75rem;
@@ -347,7 +348,7 @@ nav a.active {
     font-family: var(--font-heading);
     font-size: 1.05rem;
     font-weight: 700;
-    margin-top: 2rem;
+    margin-top: 10px;
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
 }
@@ -381,6 +382,7 @@ nav a.active {
 /* --- Source Link --- */
 .source-link {
     margin-top: 2rem;
+    margin-bottom: 50px;
     padding: 1rem 1.25rem;
     background: var(--color-header-bg);
     color: var(--color-header-text);

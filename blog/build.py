@@ -54,16 +54,9 @@ def load_css():
 
 
 def load_template(path):
-    """Load an HTML template and inline the CSS."""
+    """Load an HTML template (keeps external CSS link as-is)."""
     with open(path, "r", encoding="utf-8") as f:
-        template = f.read()
-    css = load_css()
-    if css:
-        template = template.replace(
-            '<link rel="stylesheet" href="../css/style.css">',
-            f'<style>\n{css}\n</style>'
-        )
-    return template
+        return f.read()
 
 
 def load_posts_index():

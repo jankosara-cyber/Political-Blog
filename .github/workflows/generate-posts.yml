@@ -1,0 +1,48 @@
+name: Generate Blog Posts
+
+on:
+  # Run 30 min after YouTube monitor (which runs at 7:00 and 19:00 UTC)
+  schedule:
+    - cron: '30 7 * * *'
+    - cron: '30 19 * * *'
+  # Also allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic youtube-transcript-api
+
+      - name: Generate posts from video queue
+        id: generate
+        working-directory: blog
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_post.py
+
+      - name: Commit new drafts
+        run: |
+          git config --global user.name "Juraj Orwell Bot"
+          git config --global user.email "bot@jurajorwell.com"
+          git add blog/drafts/ blog/video-queue.json
+          if git diff --staged --quiet; then
+            echo "No new drafts to commit."
+          else
+            git commit -m "New draft(s) generated from YouTube queue"
+            git push
+            echo "Drafts committed and pushed!"
+          fi
