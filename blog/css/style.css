@@ -525,3 +525,105 @@ footer p {
         display: none;
     }
 }
+
+/* --- Legacy pipeline post classes (article-* structure) --- */
+.article-container {
+    padding-bottom: 3rem;
+}
+
+.article-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+}
+
+.article-meta {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.article-body {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.article-body p {
+    margin-bottom: 1.3rem;
+}
+
+.article-body h2 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+    padding-left: 0.75rem;
+    border-left: 4px solid var(--color-accent);
+}
+
+.article-body h3 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.article-body ul,
+.article-body ol {
+    margin-bottom: 1.3rem;
+    padding-left: 1.5rem;
+}
+
+.article-body li {
+    margin-bottom: 0.4rem;
+}
+
+.article-body blockquote {
+    border-left: 4px solid var(--color-accent);
+    border-top: 1px solid var(--color-border-light);
+    border-bottom: 1px solid var(--color-border-light);
+    margin: 1.75rem 0;
+    padding: 1rem 1.25rem;
+    font-style: italic;
+    background: var(--color-surface);
+    font-size: 1.05rem;
+}
+
+.article-source {
+    margin-top: 2rem;
+    margin-bottom: 50px;
+    padding: 1rem 1.25rem;
+    background: var(--color-header-bg);
+    color: var(--color-header-text);
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 600;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.article-source a {
+    color: var(--color-accent);
+}
+
+.article-source a:hover {
+    color: #f07050;
+}
