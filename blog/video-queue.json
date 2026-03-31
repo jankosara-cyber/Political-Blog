@@ -1,16 +1,5 @@
 {
-  "pending": [
-    {
-      "video_id": "mtsrW0Gsihw",
-      "title": "Сейед М. Маранди: Йемен вступает в войну — Красное море под угрозой блокады",
-      "url": "https://www.youtube.com/watch?v=mtsrW0Gsihw",
-      "channel_name": "GDiesen1",
-      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
-      "published": "2026-03-30T14:53:37+00:00",
-      "description": "Сейед Мохаммад Маранди обсуждает продолжающуюся эскалацию в войне с Ираном — и почему внезапное вступление Йемена может стать переломным моментом. Маранди — профессор Тегеранского университета и бывший советник иранской команды по ядерным переговорам. (Некоторая часть видео подтормаживает из-за продолжающихся бомбардировок Тегерана). Записано 29.03.2026.  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https://x.com/Glenn_Diesen  \nPatreon: ",
-      "queued_at": "2026-03-30T19:45:27.747730+00:00"
-    }
-  ],
+  "pending": [],
   "processed": [
     {
       "video_id": "DBOVT0UdHXg",
@@ -83,6 +72,18 @@
       "queued_at": "2026-03-29T19:23:33.883475+00:00",
       "processed_at": "2026-03-29T19:55:33.683527+00:00",
       "draft_file": "2026-03-29-krym-vzdaluje-sa-perzsky-zaliv-pada-rusko-straca-strategicke.json"
+    },
+    {
+      "video_id": "mtsrW0Gsihw",
+      "title": "Сейед М. Маранди: Йемен вступает в войну — Красное море под угрозой блокады",
+      "url": "https://www.youtube.com/watch?v=mtsrW0Gsihw",
+      "channel_name": "GDiesen1",
+      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
+      "published": "2026-03-30T14:53:37+00:00",
+      "description": "Сейед Мохаммад Маранди обсуждает продолжающуюся эскалацию в войне с Ираном — и почему внезапное вступление Йемена может стать переломным моментом. Маранди — профессор Тегеранского университета и бывший советник иранской команды по ядерным переговорам. (Некоторая часть видео подтормаживает из-за продолжающихся бомбардировок Тегерана). Записано 29.03.2026.  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https://x.com/Glenn_Diesen  \nPatreon: ",
+      "queued_at": "2026-03-30T19:45:27.747730+00:00",
+      "processed_at": "2026-03-31T08:38:03.543391+00:00",
+      "draft_file": "2026-03-31-cervene-more-v-plame-preco-sa-jemen-stal-faktom-v-globalnom-.json"
     }
   ]
 }
