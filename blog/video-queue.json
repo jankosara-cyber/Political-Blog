@@ -9,16 +9,6 @@
       "published": "2026-03-31T15:48:46+00:00",
       "description": "Уорик Пауэлл — приглашённый профессор в Технологическом университете Квинсленда и старший научный сотрудник Института Тейхе. Пауэлл обсуждает термоэкономику, энергетический суверенитет, энергетический переход и энергетические войны.  \n**Thermoeconomics in a Time of Monsters:** https://www.amazon.co.uk/Thermoeconomics-Time-Monsters-International-Geopolitical-ebook/dp/B0GRGQ9BMQ  \nПодписывайтесь на Substack Уорика Пауэлла: https://warwickpowell.substack.com/  \n\nПодписывайтесь на профессора Гленна ",
       "queued_at": "2026-03-31T19:44:56.216407+00:00"
-    },
-    {
-      "video_id": "WdgVAZd36ks",
-      "title": "World DUMPS $82B US Treasuries - America Must Refinance $10T, No One Buying",
-      "url": "https://www.youtube.com/watch?v=WdgVAZd36ks",
-      "channel_name": "House of El",
-      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
-      "published": "2026-03-31T13:01:34+00:00",
-      "description": "The world has always assumed one thing: When crisis hits, money flows into US Treasuries. That assumption just broke.\n\n💸 Sudden shift: Foreign central banks cut holdings at the Federal Reserve Bank of New York by $82B in a month—the fastest pace in over a decade\n🛢️ War trigger: Disruption around the Strait of Hormuz forced oil-importing nations to liquidate Treasuries for dollars\n🌍 Structural trend: Reserve managers were already diversifying away—this wasn’t the cause, it was the catalyst\n📉 Safe",
-      "queued_at": "2026-03-31T19:44:56.389703+00:00"
     }
   ],
   "processed": [
@@ -153,6 +143,18 @@
       "queued_at": "2026-03-31T19:44:56.389708+00:00",
       "processed_at": "2026-03-31T20:06:31.408305+00:00",
       "draft_file": "2026-03-31-inflacia-sa-neporazila-len-skryvala-ako-geopoliticky-sok-vra.json"
+    },
+    {
+      "video_id": "WdgVAZd36ks",
+      "title": "World DUMPS $82B US Treasuries - America Must Refinance $10T, No One Buying",
+      "url": "https://www.youtube.com/watch?v=WdgVAZd36ks",
+      "channel_name": "House of El",
+      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
+      "published": "2026-03-31T13:01:34+00:00",
+      "description": "The world has always assumed one thing: When crisis hits, money flows into US Treasuries. That assumption just broke.\n\n💸 Sudden shift: Foreign central banks cut holdings at the Federal Reserve Bank of New York by $82B in a month—the fastest pace in over a decade\n🛢️ War trigger: Disruption around the Strait of Hormuz forced oil-importing nations to liquidate Treasuries for dollars\n🌍 Structural trend: Reserve managers were already diversifying away—this wasn’t the cause, it was the catalyst\n📉 Safe",
+      "queued_at": "2026-03-31T19:44:56.389703+00:00",
+      "processed_at": "2026-04-01T08:46:43.420442+00:00",
+      "draft_file": "2026-04-01-koniec-zlatej-ery-dolara-svetove-centralne-banky-sa-zbavuju-.json"
     }
   ]
 }
