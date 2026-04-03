@@ -1,16 +1,6 @@
 {
   "pending": [
     {
-      "video_id": "KBv4YiSnTbY",
-      "title": "Джо Кент: Война с Ираном, влияние Израиля и создание ИГИЛ",
-      "url": "https://www.youtube.com/watch?v=KBv4YiSnTbY",
-      "channel_name": "GDiesen1",
-      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
-      "published": "2026-04-03T02:22:11+00:00",
-      "description": "Джо Кент — бывший директор Национального центра по борьбе с терроризмом, который подал в отставку в марте 2026 года из-за войны против Ирана. Кент обсуждает ошибку нападения на Иран, навязчивое влияние Израиля на внешнюю политику США, игнорирование того факта, что Иран является рациональным актором, про-военную предвзятость в Вашингтоне, вклад США в создание ИГИЛ, проклятие бесконечных войн и высокомерие, последовавшее за военным вмешательством в Венесуэле.  \nПоставьте лайк, подпишитесь и подели",
-      "queued_at": "2026-04-03T07:52:56.798179+00:00"
-    },
-    {
       "video_id": "LBCmeO9QjJg",
       "title": "Теодор Постол: Мы недооценили иранские ракеты и дроны",
       "url": "https://www.youtube.com/watch?v=LBCmeO9QjJg",
@@ -19,16 +9,6 @@
       "published": "2026-04-03T00:14:51+00:00",
       "description": "Профессор MIT и советник Пентагона Тед Постол объясняет, насколько были недооценены количество и качество иранских ракет и дронов, а также последствия этой ошибки в расчетах.  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https://x.com/Glenn_Diesen  \nPatreon: https://www.patreon.com/glenndiesen  \nПоддержите исследования профессора Гленна Дисена:  \nPayPal: https://www.paypal.com/paypalme/glenndiesen  \nBuy me a Coffee: buymeacoffee.com/gdie",
       "queued_at": "2026-04-03T07:52:56.798191+00:00"
-    },
-    {
-      "video_id": "RbPlbbgf_DA",
-      "title": "Дэниел Дэвис: Речь Трампа о войне — эскалация с Ираном и конец НАТО?",
-      "url": "https://www.youtube.com/watch?v=RbPlbbgf_DA",
-      "channel_name": "GDiesen1",
-      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
-      "published": "2026-04-03T15:29:40+00:00",
-      "description": "Подполковник Дэниел Дэвис — четырежды участник боевых действий, лауреат премии Риденхауэра за правдивость и ведущий YouTube-канала Daniel Davis Deep Dive. Подполковник Дэвис обсуждает продолжающуюся эскалацию и стратегический вакуум в войне с Ираном, а также вероятную смерть НАТО. Записано 2 апреля 2026 года.  \nDaniel Davis Deep Dive: https://www.youtube.com/@DanielDavisDeepDive/videos  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https:",
-      "queued_at": "2026-04-03T19:30:39.208264+00:00"
     },
     {
       "video_id": "Rl-YoTNy6gA",
@@ -325,6 +305,30 @@
       "queued_at": "2026-04-02T19:40:09.691651+00:00",
       "processed_at": "2026-04-03T08:12:19.192230+00:00",
       "draft_file": "2026-04-03-americka-ekonomika-stoji-na-hranici-propasti-a-my-by-sme-mal.json"
+    },
+    {
+      "video_id": "KBv4YiSnTbY",
+      "title": "Джо Кент: Война с Ираном, влияние Израиля и создание ИГИЛ",
+      "url": "https://www.youtube.com/watch?v=KBv4YiSnTbY",
+      "channel_name": "GDiesen1",
+      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
+      "published": "2026-04-03T02:22:11+00:00",
+      "description": "Джо Кент — бывший директор Национального центра по борьбе с терроризмом, который подал в отставку в марте 2026 года из-за войны против Ирана. Кент обсуждает ошибку нападения на Иран, навязчивое влияние Израиля на внешнюю политику США, игнорирование того факта, что Иран является рациональным актором, про-военную предвзятость в Вашингтоне, вклад США в создание ИГИЛ, проклятие бесконечных войн и высокомерие, последовавшее за военным вмешательством в Венесуэле.  \nПоставьте лайк, подпишитесь и подели",
+      "queued_at": "2026-04-03T07:52:56.798179+00:00",
+      "processed_at": "2026-04-03T19:58:28.079110+00:00",
+      "draft_file": "2026-04-03-americka-vojnova-machinacia-bez-brzd-ako-washington-znova-ch.json"
+    },
+    {
+      "video_id": "RbPlbbgf_DA",
+      "title": "Дэниел Дэвис: Речь Трампа о войне — эскалация с Ираном и конец НАТО?",
+      "url": "https://www.youtube.com/watch?v=RbPlbbgf_DA",
+      "channel_name": "GDiesen1",
+      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
+      "published": "2026-04-03T15:29:40+00:00",
+      "description": "Подполковник Дэниел Дэвис — четырежды участник боевых действий, лауреат премии Риденхауэра за правдивость и ведущий YouTube-канала Daniel Davis Deep Dive. Подполковник Дэвис обсуждает продолжающуюся эскалацию и стратегический вакуум в войне с Ираном, а также вероятную смерть НАТО. Записано 2 апреля 2026 года.  \nDaniel Davis Deep Dive: https://www.youtube.com/@DanielDavisDeepDive/videos  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https:",
+      "queued_at": "2026-04-03T19:30:39.208264+00:00",
+      "processed_at": "2026-04-03T19:59:03.258650+00:00",
+      "draft_file": "2026-04-03-koniec-nata-ako-trumpova-militantna-retorika-meni-rovnovahu-.json"
     }
   ]
 }
