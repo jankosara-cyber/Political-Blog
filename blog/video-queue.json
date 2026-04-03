@@ -1,26 +1,6 @@
 {
   "pending": [
     {
-      "video_id": "surcGKH0SNI",
-      "title": "Уорвик Пауэлл: Эпоха энергетического суверенитета и войн за энергию",
-      "url": "https://www.youtube.com/watch?v=surcGKH0SNI",
-      "channel_name": "GDiesen1",
-      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
-      "published": "2026-03-31T15:48:46+00:00",
-      "description": "Уорик Пауэлл — приглашённый профессор в Технологическом университете Квинсленда и старший научный сотрудник Института Тейхе. Пауэлл обсуждает термоэкономику, энергетический суверенитет, энергетический переход и энергетические войны.  \n**Thermoeconomics in a Time of Monsters:** https://www.amazon.co.uk/Thermoeconomics-Time-Monsters-International-Geopolitical-ebook/dp/B0GRGQ9BMQ  \nПодписывайтесь на Substack Уорика Пауэлла: https://warwickpowell.substack.com/  \n\nПодписывайтесь на профессора Гленна ",
-      "queued_at": "2026-03-31T19:44:56.216407+00:00"
-    },
-    {
-      "video_id": "Liv-4CwHvHc",
-      "title": "US Economy COLLAPSES to 2020 Pandemic Levels - No Lockdown This Time, Hiring FREEZING",
-      "url": "https://www.youtube.com/watch?v=Liv-4CwHvHc",
-      "channel_name": "House of El",
-      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
-      "published": "2026-04-02T19:00:25+00:00",
-      "description": "The strongest labor market in the world isn’t collapsing with layoffs. It’s freezing in place—and that’s a far more dangerous signal. Because when hiring stops before layoffs begin, you’re not in a recession yet… you’re standing at the edge of one.\n\n📉 Historic collapse: US hiring rate fell to 3.1%—matching April 2020 pandemic shutdown levels\n👥 Hiring gap: 6.9 million job openings vs just 4.8 million hires—millions of roles not being filled\n🔒 “Great Stay”: Quits rate stuck at 1.9%, near record lo",
-      "queued_at": "2026-04-02T19:40:09.691651+00:00"
-    },
-    {
       "video_id": "KBv4YiSnTbY",
       "title": "Джо Кент: Война с Ираном, влияние Израиля и создание ИГИЛ",
       "url": "https://www.youtube.com/watch?v=KBv4YiSnTbY",
@@ -281,6 +261,30 @@
       "queued_at": "2026-04-02T19:40:09.691666+00:00",
       "processed_at": "2026-04-02T20:03:29.790610+00:00",
       "draft_file": "2026-04-02-europa-bez-ameriky-ako-si-brusel-a-ottawa-pisu-pravidla-digi.json"
+    },
+    {
+      "video_id": "surcGKH0SNI",
+      "title": "Уорвик Пауэлл: Эпоха энергетического суверенитета и войн за энергию",
+      "url": "https://www.youtube.com/watch?v=surcGKH0SNI",
+      "channel_name": "GDiesen1",
+      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
+      "published": "2026-03-31T15:48:46+00:00",
+      "description": "Уорик Пауэлл — приглашённый профессор в Технологическом университете Квинсленда и старший научный сотрудник Института Тейхе. Пауэлл обсуждает термоэкономику, энергетический суверенитет, энергетический переход и энергетические войны.  \n**Thermoeconomics in a Time of Monsters:** https://www.amazon.co.uk/Thermoeconomics-Time-Monsters-International-Geopolitical-ebook/dp/B0GRGQ9BMQ  \nПодписывайтесь на Substack Уорика Пауэлла: https://warwickpowell.substack.com/  \n\nПодписывайтесь на профессора Гленна ",
+      "queued_at": "2026-03-31T19:44:56.216407+00:00",
+      "processed_at": "2026-04-03T08:12:01.076691+00:00",
+      "draft_file": "2026-04-03-energeticka-vojna-uz-nie-je-sci-fi-preco-sa-slovensko-musi-e.json"
+    },
+    {
+      "video_id": "Liv-4CwHvHc",
+      "title": "US Economy COLLAPSES to 2020 Pandemic Levels - No Lockdown This Time, Hiring FREEZING",
+      "url": "https://www.youtube.com/watch?v=Liv-4CwHvHc",
+      "channel_name": "House of El",
+      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
+      "published": "2026-04-02T19:00:25+00:00",
+      "description": "The strongest labor market in the world isn’t collapsing with layoffs. It’s freezing in place—and that’s a far more dangerous signal. Because when hiring stops before layoffs begin, you’re not in a recession yet… you’re standing at the edge of one.\n\n📉 Historic collapse: US hiring rate fell to 3.1%—matching April 2020 pandemic shutdown levels\n👥 Hiring gap: 6.9 million job openings vs just 4.8 million hires—millions of roles not being filled\n🔒 “Great Stay”: Quits rate stuck at 1.9%, near record lo",
+      "queued_at": "2026-04-02T19:40:09.691651+00:00",
+      "processed_at": "2026-04-03T08:12:19.192230+00:00",
+      "draft_file": "2026-04-03-americka-ekonomika-stoji-na-hranici-propasti-a-my-by-sme-mal.json"
     }
   ]
 }
