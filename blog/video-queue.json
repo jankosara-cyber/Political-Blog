@@ -1,16 +1,6 @@
 {
   "pending": [
     {
-      "video_id": "LBCmeO9QjJg",
-      "title": "Теодор Постол: Мы недооценили иранские ракеты и дроны",
-      "url": "https://www.youtube.com/watch?v=LBCmeO9QjJg",
-      "channel_name": "GDiesen1",
-      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
-      "published": "2026-04-03T00:14:51+00:00",
-      "description": "Профессор MIT и советник Пентагона Тед Постол объясняет, насколько были недооценены количество и качество иранских ракет и дронов, а также последствия этой ошибки в расчетах.  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https://x.com/Glenn_Diesen  \nPatreon: https://www.patreon.com/glenndiesen  \nПоддержите исследования профессора Гленна Дисена:  \nPayPal: https://www.paypal.com/paypalme/glenndiesen  \nBuy me a Coffee: buymeacoffee.com/gdie",
-      "queued_at": "2026-04-03T07:52:56.798191+00:00"
-    },
-    {
       "video_id": "4bY8XI_BLbQ",
       "title": "USA Caught Trying to Use Austria for War - Rejected Every Request, Treated Like Enemy",
       "url": "https://www.youtube.com/watch?v=4bY8XI_BLbQ",
@@ -29,26 +19,6 @@
       "published": "2026-04-04T19:00:06+00:00",
       "description": "Europe is drawing a harder border around digital finance—and this time the target is the digital dollar. What looks like a technical stablecoin rule may actually be another step in a broader European push for monetary sovereignty, regulatory control, and reduced dependence on American financial infrastructure.\n\n🇪🇺 Why Germany and Italy want EU regulators to have the power to ban foreign stablecoins from operating in Europe\n💵 How dollar-backed stablecoins like Tether and USD Coin became critical ",
       "queued_at": "2026-04-04T19:22:49.475572+00:00"
-    },
-    {
-      "video_id": "_9D6NF_bJfs",
-      "title": "Countries CANCEL Dollar Loans For Yuan - Save $250M Per $1B Project, Reserves at 31-Year Low",
-      "url": "https://www.youtube.com/watch?v=_9D6NF_bJfs",
-      "channel_name": "House of El",
-      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
-      "published": "2026-04-04T16:00:49+00:00",
-      "description": "The global financial order is not collapsing in one dramatic moment. It is being rerouted, quietly and methodically, through cheaper capital, local-currency lending, and a world that no longer sees the dollar as the only safe option.\n\n🌍 Why the BRICS New Development Bank’s shift toward yuan financing matters far beyond one institution\n💴 How lower Chinese bond yields can make yuan loans dramatically cheaper than dollar loans for major infrastructure projects\n🏗️ Why emerging-market borrowers may p",
-      "queued_at": "2026-04-04T19:22:49.475584+00:00"
-    },
-    {
-      "video_id": "gYCSt6gc6WI",
-      "title": "Investors FLEE US Stocks for Europe - First Time in 5 Years, Capital Exits, 32.6% vs 16.4%",
-      "url": "https://www.youtube.com/watch?v=gYCSt6gc6WI",
-      "channel_name": "House of El",
-      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
-      "published": "2026-04-04T13:01:14+00:00",
-      "description": "For two decades, American markets looked untouchable. Now the flow of capital is shifting—and Europe is no longer being priced like the weak link of the developed world.\n\n📈 Why European stocks outperformed US equities in 2025—and why that trend has continued into 2026\n🇪🇺 How a 35% valuation discount makes European equities look increasingly attractive relative to the S&amp;P 500\n💻 Why extreme concentration in US tech is starting to look less like strength and more like fragility\n💶 How a weaker U",
-      "queued_at": "2026-04-04T19:22:49.475588+00:00"
     }
   ],
   "processed": [
@@ -363,6 +333,42 @@
       "queued_at": "2026-04-03T19:30:39.344900+00:00",
       "processed_at": "2026-04-04T08:04:22.573533+00:00",
       "draft_file": "2026-04-04-ked-sa-americka-politika-rozpada-na-ociach-macronov-verejny-.json"
+    },
+    {
+      "video_id": "LBCmeO9QjJg",
+      "title": "Теодор Постол: Мы недооценили иранские ракеты и дроны",
+      "url": "https://www.youtube.com/watch?v=LBCmeO9QjJg",
+      "channel_name": "GDiesen1",
+      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
+      "published": "2026-04-03T00:14:51+00:00",
+      "description": "Профессор MIT и советник Пентагона Тед Постол объясняет, насколько были недооценены количество и качество иранских ракет и дронов, а также последствия этой ошибки в расчетах.  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https://x.com/Glenn_Diesen  \nPatreon: https://www.patreon.com/glenndiesen  \nПоддержите исследования профессора Гленна Дисена:  \nPayPal: https://www.paypal.com/paypalme/glenndiesen  \nBuy me a Coffee: buymeacoffee.com/gdie",
+      "queued_at": "2026-04-03T07:52:56.798191+00:00",
+      "processed_at": "2026-04-04T19:53:05.583184+00:00",
+      "draft_file": "2026-04-04-iran-nas-prekvapit-mohla-ale-nechceli-sme-to-vidiet-co-to-zn.json"
+    },
+    {
+      "video_id": "_9D6NF_bJfs",
+      "title": "Countries CANCEL Dollar Loans For Yuan - Save $250M Per $1B Project, Reserves at 31-Year Low",
+      "url": "https://www.youtube.com/watch?v=_9D6NF_bJfs",
+      "channel_name": "House of El",
+      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
+      "published": "2026-04-04T16:00:49+00:00",
+      "description": "The global financial order is not collapsing in one dramatic moment. It is being rerouted, quietly and methodically, through cheaper capital, local-currency lending, and a world that no longer sees the dollar as the only safe option.\n\n🌍 Why the BRICS New Development Bank’s shift toward yuan financing matters far beyond one institution\n💴 How lower Chinese bond yields can make yuan loans dramatically cheaper than dollar loans for major infrastructure projects\n🏗️ Why emerging-market borrowers may p",
+      "queued_at": "2026-04-04T19:22:49.475584+00:00",
+      "processed_at": "2026-04-04T19:53:59.059549+00:00",
+      "draft_file": "2026-04-04-ticha-revolucia-ako-sa-svet-vysuva-z-dolaroveho-pata-a-co-to.json"
+    },
+    {
+      "video_id": "gYCSt6gc6WI",
+      "title": "Investors FLEE US Stocks for Europe - First Time in 5 Years, Capital Exits, 32.6% vs 16.4%",
+      "url": "https://www.youtube.com/watch?v=gYCSt6gc6WI",
+      "channel_name": "House of El",
+      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
+      "published": "2026-04-04T13:01:14+00:00",
+      "description": "For two decades, American markets looked untouchable. Now the flow of capital is shifting—and Europe is no longer being priced like the weak link of the developed world.\n\n📈 Why European stocks outperformed US equities in 2025—and why that trend has continued into 2026\n🇪🇺 How a 35% valuation discount makes European equities look increasingly attractive relative to the S&amp;P 500\n💻 Why extreme concentration in US tech is starting to look less like strength and more like fragility\n💶 How a weaker U",
+      "queued_at": "2026-04-04T19:22:49.475588+00:00",
+      "processed_at": "2026-04-04T19:54:17.332302+00:00",
+      "draft_file": "2026-04-04-koniec-americkej-dominancie-preco-sa-investori-konecne-otaca.json"
     }
   ]
 }
