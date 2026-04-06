@@ -19,16 +19,6 @@
       "published": "2026-04-06T17:00:20+00:00",
       "description": "Europe is no longer treating American software as neutral infrastructure. When Denmark builds a contingency plan to exit US platforms and France moves millions of civil servants onto domestic systems, the message is unmistakable: digital dependence is now being treated as a national security risk.\n\n🇩🇰 Why Denmark’s shift to LibreOffice matters far beyond office software\n🧭 How “digital independence” has moved from a policy slogan to a national strategy in one of Europe’s most tech-forward states\n",
       "queued_at": "2026-04-06T19:43:12.149687+00:00"
-    },
-    {
-      "video_id": "8NRgbSkcpQo",
-      "title": "Trump's Easter Tantrum Blows Up - Iran Now Targeting Alternative Oil Routes",
-      "url": "https://www.youtube.com/watch?v=8NRgbSkcpQo",
-      "channel_name": "House of El",
-      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
-      "published": "2026-04-06T13:00:13+00:00",
-      "description": "Military superiority means less when the other side controls the map. This video breaks down how Iran’s threat to disrupt both Hormuz and Bab al-Mandeb could turn a regional war into a global energy and inflation shock.\n\n🌍 Why the Strait of Hormuz remains one of the most important oil chokepoints in the world\n⛽ How threats around Bab al-Mandeb could shut down the fallback route and send oil prices sharply higher\n🚢 What happens to shipping costs, insurance, supply chains, and fuel prices when bot",
-      "queued_at": "2026-04-06T19:43:12.149700+00:00"
     }
   ],
   "processed": [
@@ -403,6 +393,18 @@
       "queued_at": "2026-04-04T19:22:49.475572+00:00",
       "processed_at": "2026-04-05T19:55:57.869925+00:00",
       "draft_file": "2026-04-05-europa-si-bera-spat-peniaze-ako-sa-brusel-msti-na-americkych.json"
+    },
+    {
+      "video_id": "8NRgbSkcpQo",
+      "title": "Trump's Easter Tantrum Blows Up - Iran Now Targeting Alternative Oil Routes",
+      "url": "https://www.youtube.com/watch?v=8NRgbSkcpQo",
+      "channel_name": "House of El",
+      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
+      "published": "2026-04-06T13:00:13+00:00",
+      "description": "Military superiority means less when the other side controls the map. This video breaks down how Iran’s threat to disrupt both Hormuz and Bab al-Mandeb could turn a regional war into a global energy and inflation shock.\n\n🌍 Why the Strait of Hormuz remains one of the most important oil chokepoints in the world\n⛽ How threats around Bab al-Mandeb could shut down the fallback route and send oil prices sharply higher\n🚢 What happens to shipping costs, insurance, supply chains, and fuel prices when bot",
+      "queued_at": "2026-04-06T19:43:12.149700+00:00",
+      "processed_at": "2026-04-06T20:04:58.789422+00:00",
+      "draft_file": "2026-04-06-ked-sa-ropne-cesty-uzatvaraju-preco-by-mal-trump-a-zvysok-sv.json"
     }
   ]
 }
