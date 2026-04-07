@@ -11,26 +11,6 @@
       "queued_at": "2026-04-03T19:30:39.344897+00:00"
     },
     {
-      "video_id": "GT6PaWgfW8Y",
-      "title": "Denmark EXITS US Tech - Microsoft Replacement Plan Ready, France Bans Teams by 2027",
-      "url": "https://www.youtube.com/watch?v=GT6PaWgfW8Y",
-      "channel_name": "House of El",
-      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
-      "published": "2026-04-06T17:00:20+00:00",
-      "description": "Europe is no longer treating American software as neutral infrastructure. When Denmark builds a contingency plan to exit US platforms and France moves millions of civil servants onto domestic systems, the message is unmistakable: digital dependence is now being treated as a national security risk.\n\n🇩🇰 Why Denmark’s shift to LibreOffice matters far beyond office software\n🧭 How “digital independence” has moved from a policy slogan to a national strategy in one of Europe’s most tech-forward states\n",
-      "queued_at": "2026-04-06T19:43:12.149687+00:00"
-    },
-    {
-      "video_id": "3PxIhnnkNsU",
-      "title": "Рэй Макговерн: Смерть НАТО — пора менять стратегию?",
-      "url": "https://www.youtube.com/watch?v=3PxIhnnkNsU",
-      "channel_name": "GDiesen1",
-      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
-      "published": "2026-04-07T00:31:21+00:00",
-      "description": "Рэй Макговерн проработал в ЦРУ 27 лет, возглавлял Национальные разведывательные оценки и готовил Ежедневные президентские сводки ЦРУ. Макговерн обсуждает, как американская империя рушится и тянет за собой всю систему безопасности, возглавляемую США.  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https://x.com/Glenn_Diesen  \nPatreon: https://www.patreon.com/glenndiesen  \nПоддержите исследования профессора Гленна Дисена:  \nPayPal: https://w",
-      "queued_at": "2026-04-07T08:02:45.651290+00:00"
-    },
-    {
       "video_id": "A2oGJBlPmso",
       "title": "Ларри Джонсон: Иран сбил американский самолёт — Трамп готовит эскалацию войны",
       "url": "https://www.youtube.com/watch?v=A2oGJBlPmso",
@@ -425,6 +405,30 @@
       "queued_at": "2026-04-06T19:43:12.149700+00:00",
       "processed_at": "2026-04-06T20:04:58.789422+00:00",
       "draft_file": "2026-04-06-ked-sa-ropne-cesty-uzatvaraju-preco-by-mal-trump-a-zvysok-sv.json"
+    },
+    {
+      "video_id": "GT6PaWgfW8Y",
+      "title": "Denmark EXITS US Tech - Microsoft Replacement Plan Ready, France Bans Teams by 2027",
+      "url": "https://www.youtube.com/watch?v=GT6PaWgfW8Y",
+      "channel_name": "House of El",
+      "channel_id": "UCJ52xpIoq5aKaIU_ZP40-nQ",
+      "published": "2026-04-06T17:00:20+00:00",
+      "description": "Europe is no longer treating American software as neutral infrastructure. When Denmark builds a contingency plan to exit US platforms and France moves millions of civil servants onto domestic systems, the message is unmistakable: digital dependence is now being treated as a national security risk.\n\n🇩🇰 Why Denmark’s shift to LibreOffice matters far beyond office software\n🧭 How “digital independence” has moved from a policy slogan to a national strategy in one of Europe’s most tech-forward states\n",
+      "queued_at": "2026-04-06T19:43:12.149687+00:00",
+      "processed_at": "2026-04-07T20:06:02.418913+00:00",
+      "draft_file": "2026-04-07-europa-sa-uz-neboji-americkych-technologii-digitalna-nezavis.json"
+    },
+    {
+      "video_id": "3PxIhnnkNsU",
+      "title": "Рэй Макговерн: Смерть НАТО — пора менять стратегию?",
+      "url": "https://www.youtube.com/watch?v=3PxIhnnkNsU",
+      "channel_name": "GDiesen1",
+      "channel_id": "UCfGKHWHUjwifEW474JdV2LA",
+      "published": "2026-04-07T00:31:21+00:00",
+      "description": "Рэй Макговерн проработал в ЦРУ 27 лет, возглавлял Национальные разведывательные оценки и готовил Ежедневные президентские сводки ЦРУ. Макговерн обсуждает, как американская империя рушится и тянет за собой всю систему безопасности, возглавляемую США.  \nПодписывайтесь на профессора Гленна Дисена:  \nSubstack: https://glenndiesen.substack.com/  \nX/Twitter: https://x.com/Glenn_Diesen  \nPatreon: https://www.patreon.com/glenndiesen  \nПоддержите исследования профессора Гленна Дисена:  \nPayPal: https://w",
+      "queued_at": "2026-04-07T08:02:45.651290+00:00",
+      "processed_at": "2026-04-07T20:06:21.856630+00:00",
+      "draft_file": "2026-04-07-americka-v-rozpade-co-hrozi-nato-a-europskej-bezpecnosti.json"
     }
   ]
 }
